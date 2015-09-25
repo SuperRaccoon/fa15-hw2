@@ -26,5 +26,9 @@ end
   end
 
   def person
+	myPerson = Person.new(params[:name],params[:age])
+	@intro = myPerson.introduce()
+	@birthyear = myPerson.birth_year()
+	@nickname = myPerson.nickname()
   end
 end
